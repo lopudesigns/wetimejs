@@ -8,7 +8,7 @@ International higly customizable relative date/time formatter (both for past and
 
 Formats a date/timestamp to:
 
-  * just now
+  * now
   * 5m
   * 15 min
   * 25 minutes
@@ -38,7 +38,7 @@ TimeAgo.locale(en)
 const timeAgo = new TimeAgo('en-US')
 
 timeAgo.format(new Date())
-// "just now"
+// "now"
 
 timeAgo.format(Date.now() - 60 * 1000)
 // "a minute ago"
@@ -111,7 +111,7 @@ timeAgo.format(Date.now() - 60 * 1000, 'time')
 
 Similar to the default style but with "ago" omitted:
 
-  * just now
+  * now
   * 1 minute
   * 2 minutes
   * 5 minutes
@@ -238,7 +238,7 @@ Built-in gradations:
 ```js
 import {
   canonical, // '1 second ago', '2 minutes ago', …
-  convenient // 'just now', '5 minutes ago', …
+  convenient // 'now', '5 minutes ago', …
 } from 'javascript-time-ago/gradation'
 ```
 

@@ -17,20 +17,20 @@ describe(`time ago`, function()
 	{
 		const time_ago = new JavascriptTimeAgo('en')
 		time_ago.format(Date.now(), 'twitter').should.equal('')
-		time_ago.format(Date.now(), 'time').should.equal('just now')
-		time_ago.format(Date.now(), 'exotic').should.equal('just now')
+		time_ago.format(Date.now(), 'time').should.equal('now')
+		time_ago.format(Date.now(), 'exotic').should.equal('now')
 	})
 
 	it(`should accept empty constructor parameters`, function()
 	{
 		const time_ago = new JavascriptTimeAgo()
-		time_ago.format(new Date()).should.equal('just now')
+		time_ago.format(new Date()).should.equal('now')
 	})
 
 	it(`should accept Dates`, function()
 	{
 		const time_ago = new JavascriptTimeAgo('en')
-		time_ago.format(new Date()).should.equal('just now')
+		time_ago.format(new Date()).should.equal('now')
 	})
 
 	it(`should not accept anything but Dates and timestamps`, function()
@@ -155,7 +155,7 @@ describe(`time ago`, function()
 	{
 		convenient_gradation_test
 		([
-			'just now',
+			'now',
 			'a minute ago',
 			'2 minutes ago',
 			'5 minutes ago',
@@ -392,7 +392,7 @@ export function convenient_gradation_test(convenient_gradation_labels, time_ago,
 
 const convenient_gradation =
 [
-	// 'just now':
+	// 'now':
 	[
 		0,
 		44.9

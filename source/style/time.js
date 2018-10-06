@@ -2,7 +2,7 @@ import { convenient } from '../gradation'
 
 // Similar to the default style but with "ago" omitted.
 //
-// just now
+// now
 // 5 minutes
 // 10 minutes
 // 15 minutes

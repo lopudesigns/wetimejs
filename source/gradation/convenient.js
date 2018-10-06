@@ -1,6 +1,6 @@
 import { day, month, year } from './helpers'
 
-// just now
+// now
 // 1 minute ago
 // 2 minutes ago
 // 5 minutes ago

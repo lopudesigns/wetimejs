@@ -7,7 +7,7 @@ describe('"time" style', function()
 	{
 		convenient_gradation_test
 		([
-			'just now',
+			'now',
 			'1 minute',
 			'2 minutes',
 			'5 minutes',
